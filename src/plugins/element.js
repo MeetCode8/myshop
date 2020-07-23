@@ -30,6 +30,12 @@ import {
   Tree,
   select,
   option,
+  alert,
+  Cascader,
+  tabs,
+  TabPane,
+  timeline,
+  TimelineItem,
 } from "element-ui";
 
 Vue.use(Button);
@@ -60,6 +66,12 @@ Vue.use(tag);
 Vue.use(Tree);
 Vue.use(select);
 Vue.use(option);
+Vue.use(alert);
+Vue.use(Cascader);
+Vue.use(tabs);
+Vue.use(TabPane);
+Vue.use(timeline);
+Vue.use(TimelineItem);
 
 Vue.prototype.$message = Message;
 Vue.prototype.$confirm = MessageBox;

@@ -5,6 +5,7 @@ import store from "./store";
 import "./plugins/element.js";
 // 导入全局的字体图标;
 import fonts from "./assets/fonts/iconfont.css";
+import TreeTable from "vue-table-with-tree-grid";
 Vue.config.productionTip = false;
 
 // 导入全局的样式
@@ -22,6 +23,8 @@ axios.interceptors.request.use((config) => {
 });
 
 Vue.prototype.$http = axios;
+// 定义全局组件的treetable
+Vue.component("tree-table", TreeTable);
 
 new Vue({
   router,
