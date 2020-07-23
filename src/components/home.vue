@@ -6,7 +6,7 @@
         <img src="../assets/img/yu.png" alt />
         <span>电商后台管理系统</span>
       </div>
-      <el-button type="info">退出</el-button>
+      <el-button type="info" @click="logout">退出</el-button>
     </el-header>
 
     <!-- 主体内容布局 -->
@@ -70,6 +70,10 @@ export default {
     this.getMenuList();
   },
   methods: {
+    logout() {
+      window.sessionStorage.clear();
+      this.$router.push("/login");
+    },
     // 获取左侧菜单数据
     async getMenuList() {
       const { data: res } = await this.$http.get("menus");

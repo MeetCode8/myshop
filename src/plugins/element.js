@@ -26,6 +26,10 @@ import {
   pagination,
   dialog,
   MessageBox,
+  tag,
+  Tree,
+  select,
+  option,
 } from "element-ui";
 
 Vue.use(Button);
@@ -52,6 +56,10 @@ Vue.use(Switch);
 Vue.use(tooltip);
 Vue.use(pagination);
 Vue.use(dialog);
+Vue.use(tag);
+Vue.use(Tree);
+Vue.use(select);
+Vue.use(option);
 
 Vue.prototype.$message = Message;
 Vue.prototype.$confirm = MessageBox;
